@@ -113,6 +113,8 @@ local Toggle = false
                 wait()
             end
         end)
+        wait()
+    end
     print("Clicked")
 end)
 
