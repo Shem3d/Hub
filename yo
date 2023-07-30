@@ -6,11 +6,6 @@ local Tab = Window:NewTab("MM2 Scripts")
 
 local Section = Tab:NewSection("MM2")
 
-Section:NewButton("Highlight Hub Premium", "ButtonInfo", function()
-
-    print("Clicked")
-end)
-
 Section:NewButton("Lunar Hub Premium", "ButtonInfo", function()
 script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ" ;
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
@@ -31,11 +26,6 @@ end)
 
 Section:NewButton("Highlight Hub", "ButtonInfo", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main'))()
-    print("Clicked")
-end)
-
-Section:NewButton("MM2 Chams", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
     print("Clicked")
 end)
 
@@ -79,6 +69,50 @@ end)
 
 Section:NewButton("Keyboard", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+    print("Clicked")
+end)
+
+Section:NewButton("Toggle UI", "ButtonInfo", function()
+local Toggle = false
+        
+        local R3THTOGGLEBUTTON = Instance.new("ScreenGui")
+        local Button = Instance.new("TextButton")
+        local UICorner = Instance.new("UICorner")
+        local UICorner_2 = Instance.new("UICorner")
+        
+        R3THTOGGLEBUTTON.Name = "R3THTOGGLEBUTTON"
+        R3THTOGGLEBUTTON.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+        
+        Button.Name = "Button"
+        Button.Parent = R3THTOGGLEBUTTON
+        Button.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+        Button.BorderColor3 = Color3.fromRGB(52, 52, 52)
+        Button.BorderSizePixel = 0
+        Button.Position = UDim2.new(0.118321165, 0, 0.164456561, 0)
+        Button.Size = UDim2.new(0.0288768671, 0, 0.0493629575, 0)
+        Button.Font = Enum.Font.FredokaOne
+        Button.Text = "T"
+        Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+        Button.TextScaled = true
+        Button.TextSize = 33.000
+        Button.TextWrapped = true
+
+        UICorner.Parent = Button
+
+        UICorner_2.Parent = Button
+
+        Button.MouseButton1Click:connect(function()
+            Toggle = not Toggle
+        end)
+
+        _G.uitogglebuttonloop = game:GetService('RunService').Heartbeat:connect(function()
+            if Toggle then
+                Toggle = false
+                local N=game:GetService("VirtualInputManager")
+                N:SendKeyEvent(true,"Equals",false,game)
+                wait()
+            end
+        end)
     print("Clicked")
 end)
 
