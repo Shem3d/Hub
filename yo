@@ -109,7 +109,7 @@ local Toggle = false
             if Toggle then
                 Toggle = false
                 local N=game:GetService("VirtualInputManager")
-                N:SendKeyEvent(true,"Shift",false,game)
+                N:SendKeyEvent(true,"Equals",false,game)
                 wait()
             end
         end)
