@@ -6,12 +6,6 @@ local Tab = Window:NewTab("MM2 Scripts")
 
 local Section = Tab:NewSection("MM2")
 
-Section:NewButton("Lunar Hub Premium", "ButtonInfo", function()
-script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ" ;
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
-    print("Clicked")
-end)
-
 Section:NewButton("Eclipse Hub Premium", "ButtonInfo", function()
  getgenv().mainKey = "p13a8105b-5b98-46a1-bf61-65c7ff8a2a3f";
 
@@ -19,13 +13,19 @@ local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or
     print("Clicked")
 end)
 
-Section:NewButton("R3TH", "ButtonInfo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3TH-PRIV/main/GAMES/R3THPRIVMM2.lua'))()
+Section:NewButton("Lunar Hub Premium", "ButtonInfo", function()
+script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ" ;
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
     print("Clicked")
 end)
 
-Section:NewButton("Highlight Hub", "ButtonInfo", function()
+Section:NewButton("Highlight Hub Free", "ButtonInfo", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main'))()
+    print("Clicked")
+end)
+
+Section:NewButton("R3TH Private", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3TH-PRIV/main/GAMES/R3THPRIVMM2.lua'))()
     print("Clicked")
 end)
 
@@ -52,6 +52,11 @@ local Tab = Window:NewTab("Utility Scripts")
 
 local Section = Tab:NewSection("Utility")
 
+Section:NewButton("Infinite Yield", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    print("Clicked")
+end)
+
 Section:NewButton("Fly Gui", "ButtonInfo", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Shem3d/fly/main/kk'))()
     print("Clicked")
@@ -62,58 +67,95 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/30xmkzz/main/o
     print("Clicked")
 end)
 
-Section:NewButton("Infinite Yield", "ButtonInfo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-    print("Clicked")
-end)
-
-Section:NewButton("Keyboard", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-    print("Clicked")
-end)
-
 Section:NewButton("Toggle UI", "ButtonInfo", function()
+local Toggle = false
+    
+local R3THTOGGLEBUTTON = Instance.new("ScreenGui")
+local Button = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 
-       local Toggle = false
-        
-        local R3THTOGGLEBUTTON = Instance.new("ScreenGui")
-        local Button = Instance.new("TextButton")
-        local UICorner = Instance.new("UICorner")
-        local UICorner_2 = Instance.new("UICorner")
-        
-        R3THTOGGLEBUTTON.Name = "R3THTOGGLEBUTTON"
-        R3THTOGGLEBUTTON.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-        
-        Button.Name = "Button"
-        Button.Parent = R3THTOGGLEBUTTON
-        Button.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
-        Button.BorderColor3 = Color3.fromRGB(52, 52, 52)
-        Button.BorderSizePixel = 0
-        Button.Position = UDim2.new(0.118321165, 0, 0.164456561, 0)
-        Button.Size = UDim2.new(0.0288768671, 0, 0.0493629575, 0)
-        Button.Font = Enum.Font.FredokaOne
-        Button.Text = "T"
-        Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-        Button.TextScaled = true
-        Button.TextSize = 33.000
-        Button.TextWrapped = true
+R3THTOGGLEBUTTON.Name = "R3THTOGGLEBUTTON"
+R3THTOGGLEBUTTON.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-        UICorner.Parent = Button
+Button.Name = "Button"
+Button.Parent = R3THTOGGLEBUTTON
+Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Button.BorderColor3 = Color3.fromRGB(52, 52, 52)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0.942588627, 0, 0.223685458, 0)
+Button.Size = UDim2.new(0.0358672254, 0, 0.0771396905, 0)
+Button.Font = Enum.Font.FredokaOne
+Button.Text = "T"
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextScaled = true
+Button.TextSize = 33.000
+Button.TextWrapped = true
+Button.Draggable = true
 
-        UICorner_2.Parent = Button
+UICorner.Parent = Button
 
-        Button.MouseButton1Click:connect(function()
-            Toggle = not Toggle
-        end)
+UICorner_2.Parent = Button
 
-        _G.uitogglebuttonloop = game:GetService('RunService').Heartbeat:connect(function()
-            if Toggle then
-                Toggle = false
-                local N=game:GetService("VirtualInputManager")
-                N:SendKeyEvent(true,"Equals",false,game)
-                wait()
-            end
-        end)
+Button.MouseButton1Click:connect(function()
+    Toggle = not Toggle
+end)
+
+_G.uitogglebuttonloop = game:GetService('RunService').Heartbeat:connect(function()
+    if Toggle then
+        Toggle = false
+        local N=game:GetService("VirtualInputManager")
+        N:SendKeyEvent(true,"Equals",false,game)
+        wait()
+    end
+end)
+wait()
+game.Players.LocalPlayer.CharacterAdded:Connect(function(Player)
+    _G.uitogglebuttonloop:Disconnect()
+    wait()
+    local Toggle = false
+    
+    local R3THTOGGLEBUTTON = Instance.new("ScreenGui")
+    local Button = Instance.new("TextButton")
+    local UICorner = Instance.new("UICorner")
+    local UICorner_2 = Instance.new("UICorner")
+    
+    R3THTOGGLEBUTTON.Name = "R3THTOGGLEBUTTON"
+    R3THTOGGLEBUTTON.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    
+    Button.Name = "Button"
+    Button.Parent = R3THTOGGLEBUTTON
+    Button.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+    Button.BorderColor3 = Color3.fromRGB(52, 52, 52)
+    Button.BorderSizePixel = 0
+    Button.Position = UDim2.new(0.942588627, 0, 0.223685458, 0)
+    Button.Size = UDim2.new(0.0358672254, 0, 0.0771396905, 0)
+    Button.Font = Enum.Font.FredokaOne
+    Button.Text = "T"
+    Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Button.TextScaled = true
+    Button.TextSize = 33.000
+    Button.TextWrapped = true
+    Button.Draggable = true
+
+    UICorner.Parent = Button
+
+    UICorner_2.Parent = Button
+
+    Button.MouseButton1Click:connect(function()
+        Toggle = not Toggle
+    end)
+
+    _G.uitogglebuttonloop = game:GetService('RunService').Heartbeat:connect(function()
+        if Toggle then
+            Toggle = false
+            local N=game:GetService("VirtualInputManager")
+            N:SendKeyEvent(true,"Equals",false,game)
+            wait()
+        end
+    end)
+    wait()
+end)
     print("Clicked")
 end)
 
