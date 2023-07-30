@@ -1,0 +1,121 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("MkzZ Hub", "DarkTheme")
+
+local Tab = Window:NewTab("MM2 Scripts")
+
+local Section = Tab:NewSection("MM2")
+
+Section:NewButton("Highlight Hub Premium", "ButtonInfo", function()
+
+    print("Clicked")
+end)
+
+Section:NewButton("Lunar Hub Premium", "ButtonInfo", function()
+script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ" ;
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
+    print("Clicked")
+end)
+
+Section:NewButton("Eclipse Hub Premium", "ButtonInfo", function()
+ getgenv().mainKey = "p13a8105b-5b98-46a1-bf61-65c7ff8a2a3f";
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+    print("Clicked")
+end)
+
+Section:NewButton("Symphony Hub", "ButtonInfo", function()
+local a,b,c,d=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,"https://itsjidy.github.io/SymphonyHub/Loader.html"c(a and b, "Your Executor does not support.")a(b({Url=d,Method="GET"}).Body)()
+    print("Clicked")
+end)
+
+Section:NewButton("Highlight Hub", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main'))()
+    print("Clicked")
+end)
+
+Section:NewButton("MM2 Chams", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("Dh Scripts")
+
+local Section = Tab:NewSection("Dh")
+
+Section:NewButton("Swage Mode", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+    print("Clicked")
+end)
+
+Section:NewButton("Speed Tool", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/EX6qHypK", true))()
+    print("Clicked")
+end)
+
+Section:NewButton("Aimlock Tool", "ButtonInfo", function()
+
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("Utility Scripts")
+
+local Section = Tab:NewSection("Utility")
+
+Section:NewButton("Fly Gui", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Shem3d/fly/main/kk'))()
+    print("Clicked")
+end)
+
+Section:NewButton("Shiftlock", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/30xmkzz/main/ok"))()
+    print("Clicked")
+end)
+
+Section:NewButton("Infinite Yield", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    print("Clicked")
+end)
+
+Section:NewButton("Keyboard", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+    print("Clicked")
+end)
+
+Section:NewButton("RTX", "ButtonInfo", function()
+loadstring(game:HttpGet(('https://pastefy.app/BIr8OzrR/raw'),true))()
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("Chat Scripts")
+
+local Section = Tab:NewSection("Chat")
+
+Section:NewButton("Anti Chat Logger", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/fifidk/main/kkk"))()
+    print("Clicked")
+end)
+
+Section:NewButton("Chat Spy", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/chatspy/main/spy"))()
+    print("Clicked")
+end)
+
+Section:NewButton("Chat Hax", "ButtonInfo", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("Hub Scripts")
+
+local Section = Tab:NewSection("Hub")
+
+Section:NewButton("Hoho Hub", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/HohoHub.lua'))()
+    print("Clicked")
+end)
+
+Section:NewButton("Ice Hub", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+    print("Clicked")
+end)
