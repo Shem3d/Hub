@@ -24,30 +24,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/HighlightMM2
     print("Clicked")
 end)
 
-Section:NewButton("R3TH Private", "ButtonInfo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3TH-PRIV/main/GAMES/R3THPRIVMM2.lua'))()
-    print("Clicked")
-end)
-
-local Tab = Window:NewTab("Dh Scripts")
-
-local Section = Tab:NewSection("Dh")
-
-Section:NewButton("Swage Mode", "ButtonInfo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
-    print("Clicked")
-end)
-
-Section:NewButton("Speed Tool", "ButtonInfo", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/EX6qHypK", true))()
-    print("Clicked")
-end)
-
-Section:NewButton("Aimlock Tool", "ButtonInfo", function()
-
-    print("Clicked")
-end)
-
 local Tab = Window:NewTab("Utility Scripts")
 
 local Section = Tab:NewSection("Utility")
@@ -156,6 +132,11 @@ game.Players.LocalPlayer.CharacterAdded:Connect(function(Player)
     end)
     wait()
 end)
+    print("Clicked")
+end)
+
+Section:NewButton("RTX", "ButtonInfo", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/uqD7VqQU'))()
     print("Clicked")
 end)
 
