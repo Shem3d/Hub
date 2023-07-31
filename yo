@@ -24,7 +24,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/HighlightMM2
     print("Clicked")
 end)
 
-Section:NewButton("Chams", "ButtonInfo", function()
+Section:NewButton("MM2 Chams", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
     print("Clicked")
 end)
@@ -40,11 +40,6 @@ end)
 
 Section:NewButton("Fly Gui", "ButtonInfo", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Shem3d/fly/main/kk'))()
-    print("Clicked")
-end)
-
-Section:NewButton("Shiftlock", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/30xmkzz/main/ok"))()
     print("Clicked")
 end)
 
@@ -140,85 +135,13 @@ end)
     print("Clicked")
 end)
 
+Section:NewButton("Shiftlock", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/30xmkzz/main/ok"))()
+    print("Clicked")
+end)
+
 Section:NewButton("RTX", "ButtonInfo", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/uqD7VqQU'))()
-    print("Clicked")
-end)
-
-local Tab = Window:NewTab("Tools Scripts")
-
-local Section = Tab:NewSection("Tools")
-
-Section:NewButton("F3X", "ButtonInfo", function()
-loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
-    print("Clicked")
-end)
-
-Section:NewButton("Btools", "ButtonInfo", function()
-game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, true)
-for index, child in pairs(game:GetService("Workspace"):GetChildren()) do
-   if child.ClassName == "Part" then
-       child.Locked = false
-   end
-   if child.ClassName == "MeshPart" then
-       child.Locked = false
-   end
-   if child.ClassName == "UnionOperation" then
-       child.Locked = false
-   end
-   if child.ClassName == "Model" then
-       for index, chil in pairs(child:GetChildren()) do
-           if chil.ClassName == "Part" then
-               chil.Locked = false
-           end
-           if chil.ClassName == "MeshPart" then
-               chil.Locked = false
-           end
-           if chil.ClassName == "UnionOperation" then
-               chil.Locked = false
-           end
-           if chil.ClassName == "Model" then
-               for index, childe in pairs(chil:GetChildren()) do
-                   if childe.ClassName == "Part" then
-                       childe.Locked = false
-                   end
-                   if childe.ClassName == "MeshPart" then
-                       childe.Locked = false
-                   end
-                   if childe.ClassName == "UnionOperation" then
-                       childe.Locked = false
-                   end
-                   if childe.ClassName == "Model" then
-                       for index, childeo in pairs(childe:GetChildren()) do
-                           if childeo.ClassName == "Part" then
-                               childeo.Locked = false
-                           end
-                           if childeo.ClassName == "MeshPart" then
-                               childeo.Locked = false
-                           end
-                           if childeo.ClassName == "UnionOperation" then
-                               childeo.Locked = false
-                           end
-                           if childeo.ClassName == "Model" then
-                           end
-                       end
-                   end
-               end
-           end
-       end
-   end
-end
-c = Instance.new("HopperBin", game:GetService("Players").LocalPlayer.Backpack)
-c.BinType = Enum.BinType.Hammer
-c = Instance.new("HopperBin", game:GetService("Players").LocalPlayer.Backpack)
-c.BinType = Enum.BinType.Clone
-c = Instance.new("HopperBin", game:GetService("Players").LocalPlayer.Backpack)
-c.BinType = Enum.BinType.Grab
-    btools.Text = "Loaded!"
-    btools.TextColor3 = Color3.fromRGB(0, 255, 50)
-    wait(2)
-    btools.TextColor3 = Color3.fromRGB(0, 0, 0)
-    btools.Text = "BTools"
     print("Clicked")
 end)
 
@@ -241,9 +164,9 @@ loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
     print("Clicked")
 end)
 
-local Tab = Window:NewTab("Hub Scripts")
+local Tab = Window:NewTab("Hubs Scripts")
 
-local Section = Tab:NewSection("Hub")
+local Section = Tab:NewSection("Hubs")
 
 Section:NewButton("Hoho Hub", "ButtonInfo", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/HohoHub.lua'))()
