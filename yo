@@ -24,6 +24,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/HighlightMM2
     print("Clicked")
 end)
 
+Section:NewButton("Chams", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
+    print("Clicked")
+end)
+
 local Tab = Window:NewTab("Utility Scripts")
 
 local Section = Tab:NewSection("Utility")
