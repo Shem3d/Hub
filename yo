@@ -2,41 +2,9 @@ local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 
 local Window = Library.CreateLib("MkzZ Hub", "Ocean")
 
-local Tab = Window:NewTab("MM2 Scripts")
-
-local Section = Tab:NewSection("MM2")
-
-Section:NewButton("Eclipse Hub Premium", "ButtonInfo", function()
- getgenv().mainKey = "p13a8105b-5b98-46a1-bf61-65c7ff8a2a3f";
-
-local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-    print("Clicked")
-end)
-
-Section:NewButton("Lunar Hub Premium", "ButtonInfo", function()
-script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ" ;
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
-    print("Clicked")
-end)
-
-Section:NewButton("Highlight Hub Free", "ButtonInfo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main'))()
-    print("Clicked")
-end)
-
-Section:NewButton("MM2 Chams", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
-    print("Clicked")
-end)
-
-local Tab = Window:NewTab("Utility Scripts")
+local Tab = Window:NewTab("Utility")
 
 local Section = Tab:NewSection("Utility")
-
-Section:NewButton("Infinite Yield", "ButtonInfo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-    print("Clicked")
-end)
 
 Section:NewButton("Fly Gui", "ButtonInfo", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Shem3d/fly/main/kk'))()
@@ -145,7 +113,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/uqD7VqQU'))()
     print("Clicked")
 end)
 
-local Tab = Window:NewTab("Chat Scripts")
+local Tab = Window:NewTab("Chat")
 
 local Section = Tab:NewSection("Chat")
 
@@ -164,7 +132,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
     print("Clicked")
 end)
 
-local Tab = Window:NewTab("Hubs Scripts")
+local Tab = Window:NewTab("Hubs")
 
 local Section = Tab:NewSection("Hubs")
 
@@ -175,5 +143,32 @@ end)
 
 Section:NewButton("Ice Hub", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("Murder Mystery 2")
+
+local Section = Tab:NewSection("Murder Mystery 2")
+
+Section:NewButton("Eclipse Hub Premium", "ButtonInfo", function()
+ getgenv().mainKey = "p13a8105b-5b98-46a1-bf61-65c7ff8a2a3f";
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+    print("Clicked")
+end)
+
+Section:NewButton("Lunar Hub Premium", "ButtonInfo", function()
+script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ" ;
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
+    print("Clicked")
+end)
+
+Section:NewButton("Highlight Hub Free", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main'))()
+    print("Clicked")
+end)
+
+Section:NewButton("MM2 Chams", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
     print("Clicked")
 end)
