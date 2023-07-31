@@ -1,105 +1,66 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 
-local Window = Library.CreateLib("MkzZ Hub", "Ocean")
+local Window = Library.CreateLib("MkzZ Hub", "Synapse")
 
-local Tab = Window:NewTab("Utility")
+local Tab = Window:NewTab("Admin Scripts")
 
-local Section = Tab:NewSection("Utility")
+local Section = Tab:NewSection("Admin Scripts")
 
-Section:NewButton("Fly Gui", "ButtonInfo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Shem3d/fly/main/kk'))()
+Section:NewButton("Infinite Yield", "ButtonInfo", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
     print("Clicked")
 end)
 
-Section:NewButton("Toggle UI", "ButtonInfo", function()
-local Toggle = false
-    
-local R3THTOGGLEBUTTON = Instance.new("ScreenGui")
-local Button = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local UICorner_2 = Instance.new("UICorner")
-
-R3THTOGGLEBUTTON.Name = "R3THTOGGLEBUTTON"
-R3THTOGGLEBUTTON.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
-Button.Name = "Button"
-Button.Parent = R3THTOGGLEBUTTON
-Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Button.BorderColor3 = Color3.fromRGB(52, 52, 52)
-Button.BorderSizePixel = 0
-Button.Position = UDim2.new(0.942588627, 0, 0.223685458, 0)
-Button.Size = UDim2.new(0.0358672254, 0, 0.0771396905, 0)
-Button.Font = Enum.Font.FredokaOne
-Button.Text = "T"
-Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button.TextScaled = true
-Button.TextSize = 33.000
-Button.TextWrapped = true
-Button.Draggable = true
-
-UICorner.Parent = Button
-
-UICorner_2.Parent = Button
-
-Button.MouseButton1Click:connect(function()
-    Toggle = not Toggle
+Section:NewButton("CMD X", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+    print("Clicked")
 end)
 
-_G.uitogglebuttonloop = game:GetService('RunService').Heartbeat:connect(function()
-    if Toggle then
-        Toggle = false
-        local N=game:GetService("VirtualInputManager")
-        N:SendKeyEvent(true,"Equals",false,game)
-        wait()
-    end
+Section:NewButton("Reviz Admin", "ButtonInfo", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/pyzjWNhk'),true))()
+    print("Clicked")
 end)
-wait()
-game.Players.LocalPlayer.CharacterAdded:Connect(function(Player)
-    _G.uitogglebuttonloop:Disconnect()
-    wait()
-    local Toggle = false
-    
-    local R3THTOGGLEBUTTON = Instance.new("ScreenGui")
-    local Button = Instance.new("TextButton")
-    local UICorner = Instance.new("UICorner")
-    local UICorner_2 = Instance.new("UICorner")
-    
-    R3THTOGGLEBUTTON.Name = "R3THTOGGLEBUTTON"
-    R3THTOGGLEBUTTON.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-    
-    Button.Name = "Button"
-    Button.Parent = R3THTOGGLEBUTTON
-    Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-    Button.BorderColor3 = Color3.fromRGB(52, 52, 52)
-    Button.BorderSizePixel = 0
-    Button.Position = UDim2.new(0.942588627, 0, 0.223685458, 0)
-    Button.Size = UDim2.new(0.0358672254, 0, 0.0771396905, 0)
-    Button.Font = Enum.Font.FredokaOne
-    Button.Text = "T"
-    Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Button.TextScaled = true
-    Button.TextSize = 33.000
-    Button.TextWrapped = true
-    Button.Draggable = true
 
-    UICorner.Parent = Button
-
-    UICorner_2.Parent = Button
-
-    Button.MouseButton1Click:connect(function()
-        Toggle = not Toggle
-    end)
-
-    _G.uitogglebuttonloop = game:GetService('RunService').Heartbeat:connect(function()
-        if Toggle then
-            Toggle = false
-            local N=game:GetService("VirtualInputManager")
-            N:SendKeyEvent(true,"Equals",false,game)
-            wait()
-        end
-    end)
-    wait()
+Section:NewButton("Fates Admin", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+    print("Clicked")
 end)
+
+Section:NewButton("ShatterVast Admin", "ButtonInfo", function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/m66HEHFu'),true))()
+    print("Clicked")
+end)
+
+Section:NewButton("Nameless Admin", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("Utility Scripts")
+
+local Section = Tab:NewSection("Utility Scripts")
+
+Section:NewButton("RTX", "ButtonInfo", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/uqD7VqQU'))()
+    print("Clicked")
+end)
+
+Section:NewButton("Toggle Keybind", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/3Fqn2AsB"))()
+    print("Clicked")
+end)
+
+Section:NewButton("Keyboard", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("FE Scripts")
+
+local Section = Tab:NewSection("FE Scripts")
+
+Section:NewButton("Fly Gui", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Shem3d/fly/main/kk'))()
     print("Clicked")
 end)
 
@@ -108,14 +69,19 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/30xmkzz/main/o
     print("Clicked")
 end)
 
-Section:NewButton("RTX", "ButtonInfo", function()
-loadstring(game:HttpGet('https://pastebin.com/raw/uqD7VqQU'))()
+Section:NewButton("Sound Panel", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/iNCBTer0"))()
     print("Clicked")
 end)
 
-local Tab = Window:NewTab("Chat")
+Section:NewButton("God Mode", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))()
+    print("Clicked")
+end)
 
-local Section = Tab:NewSection("Chat")
+local Tab = Window:NewTab("Chat Scripts")
+
+local Section = Tab:NewSection("Chat Scripts")
 
 Section:NewButton("Anti Chat Logger", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/fifidk/main/kkk"))()
@@ -132,9 +98,9 @@ loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
     print("Clicked")
 end)
 
-local Tab = Window:NewTab("Hubs")
+local Tab = Window:NewTab("Hub Scripts")
 
-local Section = Tab:NewSection("Hubs")
+local Section = Tab:NewSection("Hub Scripts")
 
 Section:NewButton("Hoho Hub", "ButtonInfo", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/HohoHub.lua'))()
@@ -146,9 +112,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/ma
     print("Clicked")
 end)
 
-local Tab = Window:NewTab("Murder Mystery 2")
+local Tab = Window:NewTab("MM2 Scripts")
 
-local Section = Tab:NewSection("Murder Mystery 2")
+local Section = Tab:NewSection("MM2 Scripts")
 
 Section:NewButton("Eclipse Hub Premium", "ButtonInfo", function()
  getgenv().mainKey = "p13a8105b-5b98-46a1-bf61-65c7ff8a2a3f";
