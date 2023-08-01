@@ -118,13 +118,13 @@ local Tab = Window:NewTab("MM2 Scripts")
 
 local Section = Tab:NewSection("MM2 Scripts")
 
-Section:NewButton("Lunar Hub Premium", "ButtonInfo", function()
+Section:NewButton("Lunar Premium", "ButtonInfo", function()
 script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ" ;
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50e2ae1310f9162f1db6.lua"))()
     print("Clicked")
 end)
 
-Section:NewButton("Highlight Hub Free", "ButtonInfo", function()
+Section:NewButton("Highlight Free", "ButtonInfo", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/HighlightMM2/main/Main'))()
     print("Clicked")
 end)
