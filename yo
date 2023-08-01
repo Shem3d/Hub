@@ -102,6 +102,13 @@ local Tab = Window:NewTab("Hub Scripts")
 
 local Section = Tab:NewSection("Hub Scripts")
 
+Section:NewButton("Eclipse Hub Premium", "ButtonInfo", function()
+ getgenv().mainKey = "p13a8105b-5b98-46a1-bf61-65c7ff8a2a3f";
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+    print("Clicked")
+end)
+
 Section:NewButton("Hoho Hub", "ButtonInfo", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/HohoHub.lua'))()
     print("Clicked")
@@ -115,13 +122,6 @@ end)
 local Tab = Window:NewTab("MM2 Scripts")
 
 local Section = Tab:NewSection("MM2 Scripts")
-
-Section:NewButton("Eclipse Hub Premium", "ButtonInfo", function()
- getgenv().mainKey = "p13a8105b-5b98-46a1-bf61-65c7ff8a2a3f";
-
-local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-    print("Clicked")
-end)
 
 Section:NewButton("Lunar Hub Premium", "ButtonInfo", function()
 script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ" ;
