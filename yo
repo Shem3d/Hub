@@ -74,11 +74,6 @@ loadstring(game:HttpGet("https://pastebin.com/raw/iNCBTer0"))()
     print("Clicked")
 end)
 
-Section:NewButton("God Mode", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))()
-    print("Clicked")
-end)
-
 local Tab = Window:NewTab("Chat Scripts")
 
 local Section = Tab:NewSection("Chat Scripts")
@@ -163,3 +158,6 @@ loadstring(game:HttpGetAsync("https://pastebin.com/raw/XiqsUXHj", true))()
     print("Clicked")
 end)
 
+local Tab = Window:NewTab("Settings")
+
+local Section = Tab:NewSection("Created by 30xMkzZ")
