@@ -102,7 +102,7 @@ local Tab = Window:NewTab("Hub Scripts")
 
 local Section = Tab:NewSection("Hub Scripts")
 
-Section:NewButton("Eclipse Hub Premium", "ButtonInfo", function()
+Section:NewButton("Eclipse Hub", "ButtonInfo", function()
  getgenv().mainKey = "p13a8105b-5b98-46a1-bf61-65c7ff8a2a3f";
 
 local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
@@ -138,3 +138,28 @@ Section:NewButton("MM2 Chams", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordiscord/Releases/main/MurderMystery2HighlightESP"))(' Watermelon ?')
     print("Clicked")
 end)
+
+local Tab = Window:NewTab("Da Hod Scripts")
+
+local Section = Tab:NewSection("Da Hood Scripts")
+
+Section:NewButton("Swage Mode", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+    print("Clicked")
+end)
+
+Section:NewButton("Agent", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mrhackerman35297/AgentCC/main/Launch.lua"))()
+    print("Clicked")
+end)
+
+Section:NewButton("Crostide", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Crostide/cdhc/main/gui"))()
+    print("Clicked")
+end)
+
+Section:NewButton("Speed Tool", "ButtonInfo", function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/XiqsUXHj", true))()
+    print("Clicked")
+end)
+
