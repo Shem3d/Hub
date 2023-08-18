@@ -40,6 +40,11 @@ local Tab = Window:NewTab("Utility Scripts")
 
 local Section = Tab:NewSection("Utility Scripts")
 
+Section:NewButton("Frozen Hub", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FrozenScripts/frozenhubb/main/frozenhub1", true))()
+    print("Clicked")
+end)
+
 Section:NewButton("RTX", "ButtonInfo", function()
 loadstring(game:HttpGet('https://pastebin.com/raw/uqD7VqQU'))()
     print("Clicked")
@@ -69,6 +74,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/30xmkzz/main/o
     print("Clicked")
 end)
 
+
+
 Section:NewButton("Sound Panel", "ButtonInfo", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/iNCBTer0"))()
     print("Clicked")
@@ -93,14 +100,12 @@ loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
     print("Clicked")
 end)
 
-local Tab = Window:NewTab("Hub Scripts")
+local Tab = Window:NewTab("Blox Fruits Scripts")
 
-local Section = Tab:NewSection("Hub Scripts")
+local Section = Tab:NewSection("Blox Fruits Scripts")
 
-Section:NewButton("Eclipse Hub", "ButtonInfo", function()
- getgenv().mainKey = "p13a8105b-5b98-46a1-bf61-65c7ff8a2a3f";
-
-local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+Section:NewButton("Zamex Hub", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Sixnumz/ZamexMobile/main/Zamex_Mobile.lua'))()
     print("Clicked")
 end)
 
@@ -108,6 +113,10 @@ Section:NewButton("Hoho Hub", "ButtonInfo", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/HohoHub.lua'))()
     print("Clicked")
 end)
+
+local Tab = Window:NewTab("Brookhaven Scripts")
+
+local Section = Tab:NewSection("Brookhaven Scripts")
 
 Section:NewButton("Ice Hub", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
@@ -117,6 +126,13 @@ end)
 local Tab = Window:NewTab("MM2 Scripts")
 
 local Section = Tab:NewSection("MM2 Scripts")
+
+Section:NewButton("Eclipse Premium", "ButtonInfo", function()
+ getgenv().mainKey = "p13a8105b-5b98-46a1-bf61-65c7ff8a2a3f";
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+    print("Clicked")
+end)
 
 Section:NewButton("Lunar Premium", "ButtonInfo", function()
 script_key="VfTMoqPAHPFChCbHTeoKwXxYZCKjVCHJ" ;
@@ -134,7 +150,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Ihaveash0rtnamefordis
     print("Clicked")
 end)
 
-local Tab = Window:NewTab("Da Hod Scripts")
+Section:NewButton("Swage Mode", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("Da Hood Scripts")
 
 local Section = Tab:NewSection("Da Hood Scripts")
 
@@ -157,7 +178,3 @@ Section:NewButton("Speed Tool", "ButtonInfo", function()
 loadstring(game:HttpGetAsync("https://pastebin.com/raw/XiqsUXHj", true))()
     print("Clicked")
 end)
-
-local Tab = Window:NewTab("Settings")
-
-local Section = Tab:NewSection("Created by 30xMkzZ")
