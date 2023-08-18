@@ -104,12 +104,12 @@ local Tab = Window:NewTab("Blox Fruits Scripts")
 
 local Section = Tab:NewSection("Blox Fruits Scripts")
 
-Section:NewButton("Zamex Hub", "ButtonInfo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Sixnumz/ZamexMobile/main/Zamex_Mobile.lua'))()
+Section:NewButton("Hoho Hub V1", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
     print("Clicked")
 end)
 
-Section:NewButton("Hoho Hub", "ButtonInfo", function()
+Section:NewButton("Hoho Hub V2", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HohoV2/main/OldScriptLoad"))()
     print("Clicked")
 end)
