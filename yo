@@ -110,7 +110,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Sixnumz/ZamexMobile/m
 end)
 
 Section:NewButton("Hoho Hub", "ButtonInfo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/HohoHub.lua'))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HohoV2/main/OldScriptLoad"))()
     print("Clicked")
 end)
 
