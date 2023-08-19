@@ -132,6 +132,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifv
     print("Clicked")
 end)
 
+Section:NewButton("Shiftlock", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/30xmkzz/main/ok"))()
+    print("Clicked")
+end)
+
 local Tab = Window:NewTab("FE Scripts")
 
 local Section = Tab:NewSection("FE Scripts")
@@ -141,15 +146,23 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Shem3d/fly/main/kk'))
     print("Clicked")
 end)
 
-Section:NewButton("Shiftlock", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/30xmkzz/main/ok"))()
+Section:NewButton("Sound Panel", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/iNCBTer0"))()
     print("Clicked")
 end)
 
+Section:NewButton("Car Fly Mobile", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+    print("Clicked")
+end)
 
+Section:NewButton("Car Tornado Mobile", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/b0B11VVw"))()
+    print("Clicked")
+end)
 
-Section:NewButton("Sound Panel", "ButtonInfo", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/iNCBTer0"))()
+Section:NewButton("Gravity Tool", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Nc1h8ia0"))()
     print("Clicked")
 end)
 
