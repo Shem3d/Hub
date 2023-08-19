@@ -11,27 +11,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield
     print("Clicked")
 end)
 
-Section:NewButton("CMD X", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
-    print("Clicked")
-end)
-
-Section:NewButton("Reviz Admin", "ButtonInfo", function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/pyzjWNhk'),true))()
-    print("Clicked")
-end)
-
-Section:NewButton("Fates Admin", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
-    print("Clicked")
-end)
-
-Section:NewButton("ShatterVast Admin", "ButtonInfo", function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/m66HEHFu'),true))()
-    print("Clicked")
-end)
-
-Section:NewButton("Nameless Admin", "ButtonInfo", function()
+Section:NewButton("Nameless", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
     print("Clicked")
 end)
@@ -50,8 +30,95 @@ loadstring(game:HttpGet('https://pastebin.com/raw/uqD7VqQU'))()
     print("Clicked")
 end)
 
-Section:NewButton("Toggle Keybind", "ButtonInfo", function()
-loadstring(game:HttpGet("https://pastebin.com/raw/3Fqn2AsB"))()
+Section:NewButton("Toggle Keybind (M)", "ButtonInfo", function()
+local Toggle = false
+    
+local R3THTOGGLEBUTTON = Instance.new("ScreenGui")
+local Button = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+
+R3THTOGGLEBUTTON.Name = "R3THTOGGLEBUTTON"
+R3THTOGGLEBUTTON.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Button.Name = "Button"
+Button.Parent = R3THTOGGLEBUTTON
+Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Button.BorderColor3 = Color3.fromRGB(52, 52, 52)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0.942588627, 0, 0.223685458, 0)
+Button.Size = UDim2.new(0.0358672254, 0, 0.0771396905, 0)
+Button.Font = Enum.Font.FredokaOne
+Button.Text = "T"
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextScaled = true
+Button.TextSize = 33.000
+Button.TextWrapped = true
+Button.Draggable = true
+
+UICorner.Parent = Button
+
+UICorner_2.Parent = Button
+
+Button.MouseButton1Click:connect(function()
+    Toggle = not Toggle
+end)
+
+_G.uitogglebuttonloop = game:GetService('RunService').Heartbeat:connect(function()
+    if Toggle then
+        Toggle = false
+        local N=game:GetService("VirtualInputManager")
+        N:SendKeyEvent(true,"M",false,game)
+        wait()
+    end
+end)
+wait()
+game.Players.LocalPlayer.CharacterAdded:Connect(function(Player)
+    _G.uitogglebuttonloop:Disconnect()
+    wait()
+    local Toggle = false
+    
+    local R3THTOGGLEBUTTON = Instance.new("ScreenGui")
+    local Button = Instance.new("TextButton")
+    local UICorner = Instance.new("UICorner")
+    local UICorner_2 = Instance.new("UICorner")
+    
+    R3THTOGGLEBUTTON.Name = "R3THTOGGLEBUTTON"
+    R3THTOGGLEBUTTON.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+    
+    Button.Name = "Button"
+    Button.Parent = R3THTOGGLEBUTTON
+    Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    Button.BorderColor3 = Color3.fromRGB(52, 52, 52)
+    Button.BorderSizePixel = 0
+    Button.Position = UDim2.new(0.942588627, 0, 0.223685458, 0)
+    Button.Size = UDim2.new(0.0358672254, 0, 0.0771396905, 0)
+    Button.Font = Enum.Font.FredokaOne
+    Button.Text = "T"
+    Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Button.TextScaled = true
+    Button.TextSize = 33.000
+    Button.TextWrapped = true
+    Button.Draggable = true
+
+    UICorner.Parent = Button
+
+    UICorner_2.Parent = Button
+
+    Button.MouseButton1Click:connect(function()
+        Toggle = not Toggle
+    end)
+
+    _G.uitogglebuttonloop = game:GetService('RunService').Heartbeat:connect(function()
+        if Toggle then
+            Toggle = false
+            local N=game:GetService("VirtualInputManager")
+            N:SendKeyEvent(true,"M",false,game)
+            wait()
+        end
+    end)
+    wait()
+end)
     print("Clicked")
 end)
 
