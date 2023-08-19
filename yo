@@ -11,6 +11,11 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield
     print("Clicked")
 end)
 
+Section:NewButton("Infinite Yield 2", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/infinite-invis/main/remade"))()
+    print("Clicked")
+end)
+
 Section:NewButton("Nameless", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
     print("Clicked")
